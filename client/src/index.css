@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital@1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    /* border: 1px solid #253341; */
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 0px 1000px #fdfeff inset;
+    /* box-shadow: 0 0 0px 1000px #253341 inset; */
+    /* transition: background-color 5000s ease-in-out 0s; */
+    /* color: white; */
+  }
+
+
+}
+
+@layer components {}
+
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  
+}
+
+@media screen and (max-width:768px) {
+  ::-webkit-scrollbar {
+    height: 5px !important;
+  }
+}
+
+input.epr-search {
+  background-color: transparent !important;
+  border-color: gray !important;
+}
+
+.epr-emoji-category-label {
+  background-color: #ffffff85 !important;
+  color: #081929 !important;
+}
+
+
+.EmojiPickerReact {
+  background: #bbc9d1;
+  border: 0px !important;
+  transition: all 0.5s;
+
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
